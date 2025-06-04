@@ -1,0 +1,12 @@
+-- CONFIG RANDOM SALARY
+
+SELECT ROUND(RAND() * 10000, 2)
+UPDATE users 
+SET salary = ROUND(RAND() * 10000, 2);
+
+SELECT salary 
+FROM users 
+WHERE salary BETWEEN 1000 AND 2000
+ORDER BY salary DESC;
+
+
